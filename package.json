@@ -29,8 +29,8 @@
   "dependencies": {
     "chai": "*",
     "mocha": "*",
-    "selenium-webdriver": "^4.23.0",
-    "webdriverio": "^9.0.7"
+    "selenium-webdriver": "^4.38.0",
+    "webdriverio": "^9.20.0"
   },
   "devDependencies": {
     "@wdio/cli": "*",
