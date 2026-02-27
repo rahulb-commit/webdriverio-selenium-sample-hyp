@@ -15,8 +15,7 @@ maxRetries: 3
 
 # Requirement 1: Install dependencies before test
 pre:
-  - nvm install 18
-  - nvm use 18
+  - node --version
   - npm install
 
 # Requirement 4: Delete demo.txt after test
