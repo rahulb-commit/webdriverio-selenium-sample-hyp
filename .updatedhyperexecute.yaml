@@ -1,0 +1,181 @@
+accessibilityJob: false
+alwaysRunPostSteps: false
+appium: null
+autosplit: true
+betaFeature:
+    setPartiallyCompletedAsCompleted: false
+captureScreenRecordingForScenarios: false
+codeDirectory: webdriverio-selenium-sample-hyp
+collectLocalGitData: true
+combineTasksInMatrixMode: false
+concurrency: 1
+cypress: false
+differentialUpload:
+    enabled: false
+    forcedDisabled: false
+    ttlHours: null
+dynamicAllocation: false
+errorCategorizedOnFailureOnly: false
+framework:
+    additional_args: null
+    args:
+        appId: ""
+        appPath: ""
+        artifacts: false
+        autoGrantPermissions: false
+        avoidAppLaunch: false
+        customData: {}
+        darkMode: false
+        deviceSelectionStrategy: ""
+        devices: []
+        disableReleaseDevice: false
+        enableBluetooth: false
+        enableResultBundle: false
+        filters:
+            attributes: []
+        fixedIP: ""
+        isRealMobile: null
+        isVirtualDevice: false
+        language: ""
+        locale: ""
+        minorOsVersion: false
+        mitmProxy: false
+        mobileDC: null
+        networkHar: false
+        networkLogsOptions:
+            captureContent: false
+            excludeHosts: []
+            includeHosts: []
+        otherApps: []
+        platformName: ""
+        playwrightRD: false
+        preservedDevice: false
+        queueTimeout: 0
+        shards:
+            mappings: []
+        skipInstall: false
+        skipUninstallPreviousBuild: false
+        skipXMLOnRun: false
+        smartUI: null
+        testRemarks: false
+        testSuiteAppId: ""
+        testSuitePath: ""
+        uninstallPreviousBuild: false
+        xcTestPlanId: ""
+        xcTestPlanPath: ""
+    baseCommand: ""
+    defaultReports: false
+    discoveryFlags: []
+    discoveryMode: ""
+    discoveryType: ""
+    downloadURL: ""
+    flags: []
+    isTestNGXMLSuite: false
+    licenseKey: ""
+    name: ""
+    runnerFlags: []
+    toscaArgs: null
+    userdefinediscovery: false
+    version: ""
+    workingDirectory: ""
+globalPost:
+    commands: []
+    completed: false
+    disableEmail: false
+    downloadArtifacts: false
+    email:
+        linkValidity: 0
+        metaInfo: []
+        templatePath: ""
+        to: []
+    mode: ""
+    runson: ""
+    shell: ""
+    workingDirectory: ""
+globalPre:
+    cache: false
+    commands: []
+    completed: false
+    location: ""
+    maxRetries: 0
+    mode: ""
+    runson: ""
+    shell: ""
+    type: ""
+    workingDirectory: ""
+    yamlPath: null
+globalTimeout: 150
+jobID: 5bd68afc-c89a-4a20-a878-a36cbe61cb31
+jobLabel:
+    - webdriverio
+    - javascript
+    - selenium
+    - hyperexecute
+key: '********'
+localHTTPProxy: ""
+ltOptions: {}
+maxRetries: 3
+maxRetriesPreSteps: 0
+meta: {}
+platformConfig: null
+post:
+    - rm -f demo.txt
+postDirectives:
+    commands:
+        - rm -f demo.txt
+    shell: ""
+    workingDirectory: ""
+pre:
+    - npm install
+preDirectives:
+    commands:
+        - npm install
+    maxRetries: 0
+    shell: ""
+    workingDirectory: ""
+project:
+    id: 01JZ03GE64ZZA2HBVGCPBNJ4FF
+    name: LambdaTest Default Project
+    type: custom
+projectpath: ""
+regionConfig:
+    storage:
+        enabled: false
+        name: ""
+        platform: azure
+        region: ""
+    vm: []
+retryOnFailure: true
+runson: linux
+runtime:
+    language: node
+    version: "18"
+    addons: []
+    opts: {}
+slackChannel: ""
+sourcePayload:
+    verifySSL: true
+sprofilePath: ""
+storageType: ""
+testDiscovery:
+    command: echo single
+    mode: static
+    type: raw
+testDiscoveryResult:
+    - single
+testDiscoveryResult2D:
+    - - single
+testDiscoveryResultV3: []
+testRunnerCommand: npm run $test
+testSuiteStep: 150
+testSuiteTimeout: 150
+testSuites: []
+triggerMode: false
+triggerSource: CLI
+tunnelOpts:
+    testsPerTunnel: 10
+unzipPayload: false
+user: rahulblambdatest
+version: "0.1"
+waitForArtefactsUpload: false
+whiteLabelProductTag: ""

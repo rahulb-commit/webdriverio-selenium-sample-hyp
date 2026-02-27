@@ -1,0 +1,110 @@
+{
+    "id": "5bd68afc-c89a-4a20-a878-a36cbe61cb31",
+    "created_at": "2026-02-27T14:59:14Z",
+    "update_at": "2026-02-27T15:00:30Z",
+    "global_timeout": 150,
+    "tunnel_name": "",
+    "start_time": "2026-02-27T14:59:25Z",
+    "end_time": "2026-02-27T15:00:30Z",
+    "summary": {
+        "total_time": 65000000000,
+        "execution_time": 65000000000,
+        "total_tasks": 1,
+        "build_time_consumed": 65000000000,
+        "jobTestExecutionTime": "17s",
+        "failed_tasks": 0,
+        "total_stage_info": {
+            "postrun": {
+                "StageFailedPercent": 0,
+                "StagePassPercent": 100,
+                "TotalStage": 1
+            },
+            "prerun": {
+                "StageFailedPercent": 0,
+                "StagePassPercent": 100,
+                "TotalStage": 1
+            },
+            "scenario": {
+                "StageFailedPercent": 0,
+                "StagePassPercent": 100,
+                "TotalStage": 1
+            },
+            "test_discovery": {
+                "StageFailedPercent": 0,
+                "StagePassPercent": 100,
+                "TotalStage": 1
+            }
+        },
+        "status": "completed",
+        "job_link": "https://hyperexecute.lambdatest.com/hyperexecute/task?jobId=5bd68afc-c89a-4a20-a878-a36cbe61cb31"
+    },
+    "tasks": [
+        {
+            "id": "HYPL-1298164-1772204364657335275YMB",
+            "os": "linux",
+            "status": "completed",
+            "remark": "completed",
+            "debug": false,
+            "created_at": "2026-02-27T14:59:24Z",
+            "update_at": "2026-02-27T15:00:30Z",
+            "start_time": "2026-02-27T14:59:25Z",
+            "end_time": "2026-02-27T15:00:30Z",
+            "group_number": 1,
+            "stages": [
+                {
+                    "id": "8ce942c7-c7dd-488a-ba4a-c3dcd41fd048",
+                    "type": "prerun",
+                    "status": "completed",
+                    "name": "pre",
+                    "iteration": 0,
+                    "link": "pre.log",
+                    "created_at": "2026-02-27T14:59:30Z",
+                    "started_at": "2026-02-27T14:59:29Z",
+                    "updated_at": "2026-02-27T14:59:54Z",
+                    "order": 2,
+                    "task_number": 1
+                },
+                {
+                    "id": "d313d54d-5562-4449-b63c-9f00623f68ae",
+                    "type": "test_discovery",
+                    "status": "completed",
+                    "name": "discovery",
+                    "iteration": 0,
+                    "link": "discovery.log",
+                    "created_at": "2026-02-27T14:59:54Z",
+                    "started_at": "2026-02-27T14:59:54Z",
+                    "updated_at": "2026-02-27T14:59:54Z",
+                    "order": 3,
+                    "task_number": 1
+                },
+                {
+                    "id": "5fc37ddd-e2dc-4d72-8975-5bdc1fc0daff",
+                    "type": "scenario",
+                    "status": "completed",
+                    "name": "single",
+                    "iteration": 0,
+                    "link": "command.1.0.log",
+                    "created_at": "2026-02-27T14:59:54Z",
+                    "started_at": "2026-02-27T14:59:55Z",
+                    "updated_at": "2026-02-27T15:00:26Z",
+                    "order": 4,
+                    "task_number": 1
+                },
+                {
+                    "id": "35e25b10-a1ac-4af7-a815-db3923719a42",
+                    "type": "postrun",
+                    "status": "completed",
+                    "name": "post",
+                    "iteration": 0,
+                    "link": "post.log",
+                    "created_at": "2026-02-27T14:59:54Z",
+                    "started_at": "2026-02-27T15:00:30Z",
+                    "updated_at": "2026-02-27T15:00:30Z",
+                    "order": 5,
+                    "task_number": 1
+                }
+            ]
+        }
+    ],
+    "test_ids": null
+}
