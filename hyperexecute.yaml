@@ -28,7 +28,7 @@ post:
 testDiscovery:
   type: raw
   mode: static
-  command: echo single
+  command: echo single parallel multiple singleSmartUI integration
 
 testRunnerCommand: npm run $test
 
