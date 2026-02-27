@@ -38,7 +38,11 @@ testDiscovery:
   #   echo singleSmartUI
   #   echo integration
 
+env:
+  LT_USERNAME: rahulblambdatest
+  LT_ACCESS_KEY: LT_WpyWKRp2rPDxKArORDD6iUrSf0hm519hwgVWcTFpI3FSexY
+
 # Test Runner: Executes 'npm run <discovery_name>'
-testRunnerCommand: npx wdio run conf/integration.conf.js --spec tests/specs/multiple/$test
+testRunnerCommand: npx wdio run conf/integration.conf.js --spec $test
 
 jobLabel: ["webdriverio", "javascript", "selenium", "hyperexecute"]
