@@ -3,33 +3,41 @@ globalTimeout: 150
 testSuiteTimeout: 150
 testSuiteStep: 150
 
-# Requirement 2: Run on Linux
+# Requirement: Run on Linux containers
 runson: linux
 
 runtime:
   language: node
   version: 18
 
+# Enable parallel execution
 autosplit: true
 concurrency: 2
 
-# Requirement 3: Retry 3 times on failure
+# Retry logic for flaky tests
 retryOnFailure: true
 maxRetries: 3
 
-# Requirement 1: Install dependencies before test
+# Pre-test steps: Install dependencies
 pre:
   - npm install
 
-# Requirement 4: Delete demo.txt after test
+# Post-test steps: Cleanup
 post:
   - rm -f demo.txt
 
+# Test Discovery: Defines the 5 suites to be executed
 testDiscovery:
   type: raw
   mode: static
-  command: echo single parallel multiple singleSmartUI integration
+  command: |
+    echo single
+    echo parallel
+    echo multiple
+    echo singleSmartUI
+    echo integration
 
+# Test Runner: Executes 'npm run <discovery_name>'
 testRunnerCommand: npm run $test
 
 jobLabel: ["webdriverio", "javascript", "selenium", "hyperexecute"]
