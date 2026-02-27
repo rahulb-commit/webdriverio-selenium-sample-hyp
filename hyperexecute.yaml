@@ -6,6 +6,10 @@ testSuiteStep: 150
 # Requirement 2: Run on Linux
 runson: linux
 
+runtime:
+  language: node
+  version: 18
+
 autosplit: true
 concurrency: 2
 
@@ -15,7 +19,6 @@ maxRetries: 3
 
 # Requirement 1: Install dependencies before test
 pre:
-  - node --version
   - npm install
 
 # Requirement 4: Delete demo.txt after test
