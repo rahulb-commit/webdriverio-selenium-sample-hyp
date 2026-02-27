@@ -29,15 +29,16 @@ post:
 # Test Discovery: Defines the 5 suites to be executed
 testDiscovery:
   type: raw
-  mode: static
-  command: |
-    echo single
-    echo parallel
-    echo multiple
-    echo singleSmartUI
-    echo integration
+  mode: dynamic
+  command: grep -rl "describe(" tests/specs/
+  # command: |
+  #   echo single
+  #   echo parallel
+  #   echo multiple
+  #   echo singleSmartUI
+  #   echo integration
 
 # Test Runner: Executes 'npm run <discovery_name>'
-testRunnerCommand: npm run $test
+testRunnerCommand: npx wdio run conf/integration.conf.js --spec tests/specs/multiple/$test
 
 jobLabel: ["webdriverio", "javascript", "selenium", "hyperexecute"]
